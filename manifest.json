@@ -1,0 +1,14 @@
+{
+   "options_page": "options.html",
+   "browser_action": {
+      "default_icon": "hand-finger.png",
+      "default_title": "Ad Sticker"
+   },
+   "description": "Ad Sticker clicks on all advertisements on the current tab.",
+    "icons": { "128": "icon.png" },
+   "name": "Ad Sticker",
+   "permissions": [ "tabs", "webNavigation", "http://*/*", "https://*/*" ],
+   "version": "0.0.1",
+   "manifest_version": 2,
+   "background": { "scripts": ["background.js"] }    
+}

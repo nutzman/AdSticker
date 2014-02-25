@@ -1,0 +1,164 @@
+<html>
+<head>
+	<title>Ad Sticker: Options</title>
+	
+  <style rel="stylesheet" type="text/css">
+  
+  body{
+    background-color:#eee;
+    font-family:arial,sans-serif;
+    font-size:13px
+  }
+  
+  #content{
+    background-color: white;
+    border: 1px solid #DDD;
+    margin: 40px auto 20px;
+    padding: 12px;
+    width: 500px;
+    -webkit-border-radius: 12px;
+    box-shadow: 0px 0px 10px #ddd;
+  }
+  
+  h1{
+    color:#333333;
+    font-size:1.5em;
+    margin:0.7em 0 0;
+  }
+
+
+  p{
+    font-size: 12px;
+  }
+  
+  .buttons{
+    clear:left;
+    padding:5px;
+    text-align: center;
+  }
+  
+  #save_status{
+    background-color:#fff1a8;
+    font-weight:bold;
+    margin-left:10px;
+    opacity:0;
+    padding:3px;
+    border-radius:3px
+  }
+  
+  .footer{
+    text-align:center;
+    margin-top:0.4em;
+    color: rgba(0,0,0,0.2);
+  }
+
+  .footer a{
+    color: #333;
+    text-shadow: 1px 1px 1px white;
+    text-decoration: none;
+  }
+
+  .footer a:hover{
+    color: #111;
+    text-shadow: 1px 1px 1px white;
+    text-decoration: underline;
+  }
+  
+  #msg{
+    background: #090;
+    border-radius: 5px 5px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #blacklistEntries{
+    width: 500px;
+    height: 200px;
+  }
+
+  #logo{
+    background: -webkit-gradient(linear, center top, center bottom, from(white), to(#EEE));
+    padding: 15px 0px 10px 10px;
+    height: 30px;
+    border-bottom: 1px solid #DDD;
+    margin: -12px -12px 20px -12px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-shadow: 1px 1px 1px white;
+    color: #666;
+  }
+
+  span{
+    font-family: monospace;
+    background: #D9EDF7;
+    padding: 3px;
+    color: #3A87AD;
+    border-radius: 5px;
+  }
+
+  label{
+    font-weight: bold;
+  }
+
+  #support{
+    margin: 0px -12px 10px -12px;
+    background: #fff;
+    padding: 0px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+
+  }
+
+
+  .option_row{
+  clear:left;
+  }
+  
+  .option_name{
+  float:left;
+  font-weight:bold;
+  margin-top:3px;
+  }
+  
+  .option_picker{
+  float:left
+  }
+
+  hr{
+border: 1px solid #EEE;
+border-bottom: none;
+margin: 10px 0px;
+  }
+  </style>
+  
+</head>
+<body>
+<div id="content">
+	<h1 id="logo">Ad Sticker: Options</h1>
+    <p>To add additional URLs to click, please enter all or part of the URL in the list below. 
+    Each URL must be entered on a new line.</p>
+    <p style="line-height: 26px">For example: <span>www.mydomain.com</span> will click on the following links: <span>www.mydomain.com/page1.html</span> or <span>www.mydomain.com/page2.html</span></p>
+    <label for="blacklistEntries">Click links from these domains:</label><br/>
+    <textarea name="blacklistEntries" id="blacklistEntries" rows="2" cols="20"></textarea>
+    <hr/>
+     <div class="option_row">
+  
+    <hr/>
+    <hr/>
+    <div class="buttons">
+    <button id="save">Save my preferences</button></div>
+    <div id="msg" style="visibility: hidden;">Preferences Saved!</div>
+    
+  </div>
+
+  <div class="footer">
+  <p>
+  	Based on <a href="https://github.com/ocodia/Check-My-Links">Check My Links</a> By Paul Livingstone.
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
